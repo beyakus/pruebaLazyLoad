@@ -1,0 +1,11 @@
+<section class="container">
+    <h1 class="animated fadeIn">Pagina 1</h1>
+    <article>
+        <div class="card" style="width: 18rem;" *ngFor="let item of data | async">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{item.title | titlecase}}</li>
+          </ul>
+        </div>
+    </article>
+</section>
+

@@ -1,0 +1,11 @@
+<section class="container">
+    <h6 class="animated fadeIn">Parametro enviado {{param}}</h6>
+    <article>
+        <div class="card" style="width: 18rem;" *ngFor="let item of data | async">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{item.title}}</li>
+          </ul>
+        </div>
+    </article>
+</section>
+    
